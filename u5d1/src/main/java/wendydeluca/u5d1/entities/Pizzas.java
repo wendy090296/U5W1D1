@@ -10,7 +10,7 @@ public class Pizzas extends InfoProduct{
     private List<Toppings> toppings;
 
 
-    public Pizzas(String name, int calories, double price) {
+    public Pizzas(String name, int calories, double price, List<Toppings> toppings) {
         super(name, calories, price);
         this.toppings = toppings;
     }
@@ -19,10 +19,10 @@ public class Pizzas extends InfoProduct{
     @Override
     public String toString() {
         return "Pizza{" +
-                ", name='" + name + '\'' +
-                ", topping=" + toppings +
-                ", calories=" + calories +
-                ", price=" + price +
+                "name='" + getName() + '\'' +
+                ", calories=" + getCalories() +
+                ", price=" + getPrice() +
+                ", toppingList=" + getToppings() +
                 '}';
     }
 }

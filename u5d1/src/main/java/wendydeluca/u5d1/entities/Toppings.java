@@ -14,7 +14,7 @@ public class Toppings extends InfoProduct{
     @Override
     public String toString() {
         return "Topping{" +
-                "name='" + name + '\'' +
+                " name='" + name + '\'' +
                 ", calories=" + calories +
                 ", price=" + price +
                 '}';
